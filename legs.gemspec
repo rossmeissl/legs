@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
      "app/views/layouts/legs.html.erb",
      "legs.gemspec",
      "lib/legs.rb",
+     "lib/legs/Rakefile",
      "lib/legs/railtie.rb",
      "public/images/legs.png",
      "test/helper.rb",

@@ -12,5 +12,8 @@ module Legs
       ApplicationController.helper Legs::Helper
       ApplicationController.layout 'legs'
     end
+    rake_tasks do
+      load 'legs/Rakefile'
+    end
   end
 end
