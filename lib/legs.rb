@@ -3,6 +3,10 @@ require 'fileutils'
 module Legs
   ROOT = File.expand_path File.join(File.dirname(__FILE__), '..')
   
+  DEFAULT_POST_MODEL = :post
+  mattr_accessor :post_model
+  self.post_model = DEFAULT_POST_MODEL
+  
   def self.view_path
     File.join ROOT, 'app', 'views'
   end
@@ -27,4 +31,4 @@ module Legs
   end
 end
 
-require 'legs/railtie'
+require 'legs/engine'
