@@ -1,4 +1,5 @@
 require 'fileutils'
+require 'rubygems'
 
 module Legs
   ROOT = File.expand_path File.join(File.dirname(__FILE__), '..')
@@ -6,6 +7,10 @@ module Legs
   DEFAULT_POST_MODEL = :post
   mattr_accessor :post_model
   self.post_model = DEFAULT_POST_MODEL
+  
+  DEFAULT_AUTHOR_MODEL = :author
+  mattr_accessor :author_model
+  self.author_model = DEFAULT_AUTHOR_MODEL
   
   def self.view_path
     File.join ROOT, 'app', 'views'
